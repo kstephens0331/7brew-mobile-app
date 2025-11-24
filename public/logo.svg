@@ -1,0 +1,18 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Coffee Cup Shape -->
+  <g>
+    <!-- Cup Body -->
+    <path d="M60 80 C60 80, 50 90, 50 110 L50 140 C50 155, 60 165, 75 168 L125 168 C140 165, 150 155, 150 140 L150 110 C150 90, 140 80, 140 80 Z" fill="#722F37"/>
+
+    <!-- Cup Handle -->
+    <path d="M150 100 C150 100, 165 100, 170 115 C170 125, 165 130, 155 130 L150 130" stroke="#722F37" stroke-width="8" fill="none" stroke-linecap="round"/>
+
+    <!-- Steam Lines -->
+    <path d="M75 65 C75 55, 80 50, 85 45" stroke="#722F37" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+    <path d="M100 60 C100 48, 105 43, 110 38" stroke="#722F37" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+    <path d="M125 65 C125 55, 120 50, 115 45" stroke="#722F37" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  </g>
+
+  <!-- Number 7 -->
+  <text x="100" y="135" font-family="'Bebas Neue', 'Arial Black', sans-serif" font-size="70" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">7</text>
+</svg>
