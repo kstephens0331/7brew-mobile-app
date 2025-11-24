@@ -48,7 +48,7 @@ export const Orders = () => {
   if (orders.length === 0) {
     return (
       <div className="min-h-screen bg-cream pb-20">
-        <Header title="ORDERS" showCart showLocation={false} />
+        <Header showCart showLocation={false} />
         <div className="flex flex-col items-center justify-center px-4 py-20">
           <Package size={80} className="text-gray-300 mb-4" />
           <h2 className="text-2xl font-bold text-gray-900 mb-2">No orders yet</h2>
@@ -64,7 +64,7 @@ export const Orders = () => {
 
   return (
     <div className="min-h-screen bg-cream pb-20">
-      <Header title="ORDERS" showCart showLocation={false} />
+      <Header showCart showLocation={false} />
 
       <div className="max-w-screen-xl mx-auto px-4 py-6 space-y-4">
         {orders.map((order, index) => {
