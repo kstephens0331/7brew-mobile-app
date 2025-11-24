@@ -4,6 +4,7 @@ import { ArrowLeft, MapPin, Phone, Clock, Navigation } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { Card } from '../components/ui/Card';
 import { Button } from '../components/ui/Button';
+import { LocationMap } from '../components/ui/LocationMap';
 import { locations } from '../data/locations';
 
 export const Locations = () => {
@@ -120,14 +121,12 @@ export const Locations = () => {
           ))}
         </div>
 
-        {/* Map Placeholder */}
-        <Card className="h-64 bg-gray-100 flex items-center justify-center">
-          <div className="text-center text-gray-500">
-            <MapPin size={48} className="mx-auto mb-2" />
-            <p className="font-semibold">Map View</p>
-            <p className="text-sm">Interactive map coming soon</p>
-          </div>
-        </Card>
+        {/* Interactive Map */}
+        <LocationMap
+          locations={locations}
+          selectedLocation={selectedLocation}
+          onLocationSelect={setSelectedLocation}
+        />
       </div>
     </div>
   );
