@@ -6,13 +6,10 @@ import { Navigation } from 'lucide-react';
 import { Location } from '../../types';
 import { Button } from './Button';
 
-// Fix Leaflet default icon issue
-import icon from 'leaflet/dist/images/marker-icon.png';
-import iconShadow from 'leaflet/dist/images/marker-shadow.png';
-
+// Fix Leaflet default icon issue with CDN URLs
 const DefaultIcon = new Icon({
-  iconUrl: icon,
-  shadowUrl: iconShadow,
+  iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
+  shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
   iconSize: [25, 41],
   iconAnchor: [12, 41],
 });

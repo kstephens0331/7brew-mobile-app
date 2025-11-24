@@ -49,7 +49,10 @@ export const Button = ({
         className
       )}
       disabled={disabled || isLoading}
-      {...props}
+      type={props.type || 'button'}
+      onClick={props.onClick}
+      onMouseEnter={props.onMouseEnter}
+      onMouseLeave={props.onMouseLeave}
     >
       {/* Shine effect on hover */}
       <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000" />

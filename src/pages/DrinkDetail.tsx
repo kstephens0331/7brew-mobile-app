@@ -5,14 +5,13 @@ import { ArrowLeft, Plus, Minus, Heart, Coffee } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { Card } from '../components/ui/Card';
 import { getDrinkById } from '../data/menu';
-import { syrups, sauces, toppings } from '../data/customizations';
+import { syrups, toppings } from '../data/customizations';
 import { useCartStore } from '../stores/cartStore';
 import { useUserStore } from '../stores/userStore';
-import { Customizations, Size, Temperature, MilkOption, SweetnessLevel } from '../types';
+import { Customizations, Size, MilkOption, SweetnessLevel } from '../types';
 import clsx from 'clsx';
 
 const sizes: Size[] = ['small', 'medium', 'large'];
-const temperatures: Temperature[] = ['hot', 'iced', 'frozen'];
 const milkOptions: MilkOption[] = ['whole', 'skim', 'oat', 'almond', 'coconut', 'half-and-half', 'none'];
 const sweetnessLevels: SweetnessLevel[] = ['none', 'light', 'regular', 'extra'];
 
