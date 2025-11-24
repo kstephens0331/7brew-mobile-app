@@ -143,7 +143,7 @@ export const PointsTracker = ({ showFreeDrinkGoal = true }: PointsTrackerProps) 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="bg-gradient-to-br from-green-500 to-emerald-600 text-white rounded-2xl p-4 shadow-xl"
+            className="bg-gradient-to-br from-blue-400 to-blue-600 text-white rounded-2xl p-4 shadow-xl"
           >
             <div className="text-center">
               <p className="text-[10px] font-bold uppercase tracking-wider mb-1 opacity-90">
