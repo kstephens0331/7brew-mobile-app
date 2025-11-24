@@ -6,7 +6,7 @@ interface PointsTrackerProps {
   compact?: boolean;
 }
 
-export const PointsTracker = ({ showFreeDrinkGoal = true, compact = false }: PointsTrackerProps) => {
+export const PointsTracker = ({ showFreeDrinkGoal = true }: PointsTrackerProps) => {
   const user = useUserStore((state) => state.user);
 
   if (!user) return null;

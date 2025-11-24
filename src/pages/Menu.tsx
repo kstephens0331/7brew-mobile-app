@@ -54,7 +54,7 @@ export const Menu = () => {
 
   return (
     <div className="min-h-screen bg-cream pb-20">
-      <Header title="MENU" showCart showLocation />
+      <Header showCart showLocation />
 
       <div className="max-w-screen-xl mx-auto">
         {/* Category Filter */}
