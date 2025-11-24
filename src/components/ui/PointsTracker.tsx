@@ -70,10 +70,7 @@ export const PointsTracker = ({ showFreeDrinkGoal = true }: PointsTrackerProps) 
                 initial={{ width: 0 }}
                 animate={{ width: `${Math.min(progressPercentage, 100)}%` }}
                 transition={{ duration: 1.5, ease: 'easeOut' }}
-                className="absolute inset-y-0 left-0 rounded-2xl"
-                style={{
-                  background: 'linear-gradient(to right, #7B2D4F, #9F4A6B, #C869A0, #E88FC5, #A885D8, #7B6AB8, #4A5490, #2E4070)'
-                }}
+                className="absolute inset-y-0 left-0 rounded-2xl bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600"
               />
               {/* Progress Dots */}
               <div className="absolute inset-0 flex items-center justify-evenly px-2">
